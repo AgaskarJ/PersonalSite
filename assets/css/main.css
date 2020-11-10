@@ -1,0 +1,231 @@
+
+/* COLOR GRADIENT BACKGROUND */
+
+section#home {
+	background: linear-gradient(270deg, #31dbaf, #db31d5, #ee5e0c, #0cecee);
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+}
+
+section#about {
+	background: linear-gradient(270deg, #010013, #161617, #001412, #051112);
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+}
+
+section#experience {
+	background: linear-gradient(270deg, #23b28d, #246a99, #c694e8);
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+}
+
+section#contact {
+	background: linear-gradient(270deg, #010013, #161617, #001412, #051112);
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Text on Index */
+
+.index-text {
+	opacity: 1;
+	text-transform: translateY(0px);
+	color:white; 
+	font-family:verdana; 
+	font-size:300%;
+	margin: 0px;
+	line-height: 70px;
+}
+
+/* Text animation */
+
+.intro-text {
+	width: 30%;
+	opacity: 0;
+	text-transform: translate(20px);
+	text-transform: 0.5s all ease-in-out;
+}
+
+span {
+	opacity: 0;
+	transiiton: all 0.4s ease;
+	transform: translateY(50px);
+}
+
+span.fade {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/* Nav bar? lol */
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	padding-left: 44px;
+}
+
+li a {
+	display: list-item;
+	color: white;
+	font-family:verdana; 
+	font-size:100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	/* CSS smooth scroll */
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory; 
+}
+
+section {
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	scroll-snap-align: center;
+}
+
+section h1 {
+	font-size: 4.2rem;
+}
+
+section p {
+	font-size: 1.2rem;
+	font-family: 'Catamaran', sans-serif;
+}
+
+section h3 {
+	font-size: 1rem;
+
+	font-family: 'Bitter', serif;
+}
+
+section h2 {
+	font-family: 'Playfair Display', serif;
+}
+
+section h4 {
+	font-size: 4.5rem;
+	color: white;
+	padding-left: 30px;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	width: 100%
+}
+
+.navbar-right {
+	float: right;
+}
+
+.navbar-left {
+	float: left;
+}
+
+.navbar ul li {
+	margin: 0 1rem;
+	padding: 1rem; 
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+	color: orange;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.6;
+	height: 100vh;
+}
+
+th, td {
+  padding: 15px;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 5px solid #bbb;
+  border-radius: 3px;
+  width:50%;
+  padding-left: 25px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.no-underline:hover {
+	color: orange;
+}
+
+a { color:white;
+	text-decoration: none; } /* Globally */
+
+.material-icons { font-size: 50px; }
+
