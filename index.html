@@ -2,119 +2,136 @@
 
 <html>
 
-	<head>
-		<title>Jay Agaskar</title>
-		<meta charset="utf-8" />
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
-		
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/main.css" />   
-		<link rel="stylesheet" href="assets/css/test.css" />   
-		<link rel="stylesheet" href="assets/css/style.scss" />
-		
-		<script src="assets/js/script.js"></script>
-		
-		<meta charset="UTF-8">
-		
-		<script>
-		
-			var slideIndex = 1;
-showSlides(slideIndex);
+<head>
+	<title>Jay Agaskar</title>
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css" />   
+	<link rel="stylesheet" href="assets/css/test.css" />   
+	<link rel="stylesheet" href="assets/css/style.scss" />
+	<link rel="stylesheet" href="assets/css/carouselstyle.css" />
+
+	<script src="assets/js/script.js"></script>
+
+	<meta charset="UTF-8">
+
+	<!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<script>
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+	showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+	showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
 		
 		</script>
-	
 	</head>
+
 
 	<body>
 
-		 <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+		<!--JavaScript at end of body for optimized loading-->
+		<script type="text/javascript" src="assets/js/materialize.min.js"></script>
 
 		<script src="/assets/js/main.js"></script>
 
-		<div class="container">
-			<nav class="navbar">
-				<ul>
-					<li style="padding-top: 15px;"><a href="#home">Home</a></li>
-				</ul>
-				<ul>
-					<li style="float:right; padding-top: 15px; padding-left: 300px;"><a href="#about">About</a></li>
-					<li style="float:right; padding-top: 15px; padding-right: 3px;"><a href="#experience">Experience</a></li>
-					<li style="float:right; padding-top: 15px; padding-right: 3px;"><a href="#projects">Projects</a></li>
-					<li style="float:right; padding-top: 15px; padding-right: 3px;"><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+		
+
+		<div class="containerthingy"> 
+
 			<section id="home" style="display: flex; align-items: center; ">
-			<section id="banner">
-			<div class="index-text text-animate">
-					<h1 style="text-align:left; padding-left: 35px; padding-top: 90px;">Jay Agaskar,</h1>
-					<h1 style="text-align:right; padding-right: 35px; padding-top: 50px;">Student at Northeastern<br />Uninversity, 2021</h1>
-					<h1 style="text-align:left; padding-left: 35px; padding-top: 50px;">Creative & Diligent<br />Data Scientist</h1>
-					<h1 style="text-align:right; padding-right: 35px; padding-top: 50px;">with a Growth mindset</h1>
-			</div>
-			</section>
+
+				<section id="banner">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li style="float:right"><a href="#contact">Contact</a></li>
+							<li style="float:right"><a href="#projects">Projects</a></li>
+							<li style="float:right"><a href="#experience">Experience</a></li>
+							<li style="float:right"><a href="#about">About</a></li>
+						</ul>
+	
+					<div class="index-text text-animate">
+						<h6 style="text-align:left; padding-left: 35px; padding-top: 80px;">Jay Agaskar,</h6>
+						<h6 style="text-align:right; padding-right: 35px; padding-top: 20px;">Student at Northeastern<br />Uninversity, 2021</h6>
+						<h6 style="text-align:left; padding-left: 35px; padding-top: 20px;">Creative & Diligent<br />Data Scientist</h6>
+						<h6 style="text-align:right; padding-right: 35px; padding-top: 20px;">with a Growth mindset</h6>
+					</div>
+
+				</section>
 			</section>
 
 			<section id="about" style="display: flex; align-items: center; text-align: center; color: white;">
-			<div class="div-about">
-				<p>&#128075; I'm a curious analyst who can develop reports to drive business decisions. I'm an Econometrics and Finance combined major with a Computer Science Minor at Northeastern University, from Bangkok, Thailand.<br> 
-			I got my interests with technology and coding since early high school. Since then, I've been improving my skills through projects and learning from ... 
-			<br>
-				
-			<br>	
-					
-			<b>&#128200; My aspirations</b><br>
-			Most recently passionate about data analytics and have taken interests in visualizations working witn BI tools and Python scripting.<br>
-			I enjoy the problem solving aspect and indulge in taking initiatives in businesses. Easy communicator as a team member and experienced in narrating the data journey<br>
-				
-			<br>
-			
-			&#127891; Until Graduation?<br>
-			I just finished my last final Co-op as a BI Analyst building dashboards and performing analysis through SQL. Over the past few years I've been self-teaching myself R and Swift. I've also attened many hackathons to build friendships and learn new technologies. At Northeastern I'm a huge part of TAMID, a club focused on Israeli start-ups. I have been a Consulting Project Manager and am currently a Tech Consultant learning new technologies and conversing with entrepenurs.<br>
-					
-			<br>
-				
-			&#127916; &#127948; Outside of work,<br>
-			I enjoy fimmaking and video editing as full-time hobbies. Producing a portfolio of YouTube videos since 2012 consisting of short films, video blogs, and tutorials. <br>
-			I also spend time on the green playing Golf and am certified Grade 3 in Piano. Just getting into cooking over lockdown.</p>
-			
-			</div>
-			</section>
+				<div class="div-about">
+					<p>&#128075; I'm a curious analyst who can develop reports to drive business decisions. I'm an Econometrics and Finance combined major with a Computer Science Minor at Northeastern University, from Bangkok, Thailand.<br> 
+						I got my interests with technology and coding since early high school. Since then, I've been improving my skills through projects and learning from ... 
+						<br>
+
+						<br>	
+
+						<b>&#128200; My aspirations</b><br>
+						Most recently passionate about data analytics and have taken interests in visualizations working witn BI tools and Python scripting.<br>
+						I enjoy the problem solving aspect and indulge in taking initiatives in businesses. Easy communicator as a team member and experienced in narrating the data journey<br>
+
+						<br>
+
+						&#127891; Until Graduation?<br>
+						I just finished my last final Co-op as a BI Analyst building dashboards and performing analysis through SQL. Over the past few years I've been self-teaching myself R and Swift. I've also attened many hackathons to build friendships and learn new technologies. At Northeastern I'm a huge part of TAMID, a club focused on Israeli start-ups. I have been a Consulting Project Manager and am currently a Tech Consultant learning new technologies and conversing with entrepenurs.<br>
+
+						<br>
+
+						&#127916; &#127948; Outside of work,<br>
+						I enjoy fimmaking and video editing as full-time hobbies. Producing a portfolio of YouTube videos since 2012 consisting of short films, video blogs, and tutorials. <br>
+						I also spend time on the green playing Golf and am certified Grade 3 in Piano. Just getting into cooking over lockdown.</p>
+
+					</div>
+				</section>
 
 
-			<section id="experience" style="color: white;">
-			<h1 style="padding-top: 35px; text-align: center; font-family: 'Playfair Display', serif;">experience</h1>
+				<section id="experience" style="display: flex; color: white;">
+					<h1 style="padding-top: 35px; text-align: center; font-family: 'Playfair Display', serif;">experience</h1>
 
+
+				</section>
+
+
+  <!--
 <table style="width:100%">
 	<tr>
 		<td>
@@ -160,66 +177,77 @@ function showSlides(n) {
 	</tr>
 			
 	</table>
-			</section>
-			
-			
-			
-			<section id="projects" style="color: white;">
-		
-  <h1 style="font-family: 'Playfair Display', serif; padding-top: 35px; text-align: center;">projects</h1>
-				
-<div class="slider">
-  
-  <a href="#slide-1" style="color: black">1</a>
-  <a href="#slide-2" style="color: black">2</a>
-  <a href="#slide-3" style="color: black">3</a>
-  <a href="#slide-4" style="color: black">4</a>
-  <a href="#slide-5" style="color: black">5</a>
+-->
 
-  <div class="slides">
-    <div id="slide-1" style="color: black">
-      1
-    </div>
-    <div id="slide-2" style="color: black">
-      2
-    </div>
-    <div id="slide-3" style="color: black">
-      3
-    </div>
-    <div id="slide-4" style="color: black">
-      4
-    </div>
-    <div id="slide-5" style="color: black">
-      5
-    </div>
-  </div>
-</div>
-			<!-- At my co-op I performed a supervised machine learning model on cancellation comments to understand sentiments wihtout having to go over every single comment. I used a Random Forest model that had a 80% training set accuracy and a 70% testing set accuracy. <b>Technology/Tools used: Pyhton, Jupyter Notebook, MSSQL, Excel-->
-		
-			</section>
-			
-			
-			
-			<section id="contact" style="display: flex;">
-				<p></p>
-			<h2 style="color: white; font-size: 2.5rem; text-align: left; padding-left: 30px; padding-top: 100px; font-family: 'Fjalla One', sans-serif;">Get in touch!</h2>
-			<h2 style="font-size: 5rem; color: white; padding-left: 30px; font-family: 'Fjalla One', sans-serif;"><a href="mailto:agaskar.j@northeastern.edu">agaskar.j@northeastern.edu<i class="material-icons">mail_outline</i></a></h2>
-			<hr class="rounded">
-			<div style="font-family: 'Fjalla One', sans-serif;">
-				<img src="images/IMG-6827.PNG" style="float:right; width: 412px; height: 421px; padding-right: 10px;"/>
-			<h4><i><a href="https://www.linkedin.com/in/jayagaskar/" class="no-underline" target="_blank">LinkedIn<i class="material-icons">north_east</i></a></i></h4>
-			<h4><i><a href="https://github.com/AGASKARJ" class="no-underline" target="_blank">Github<i class="material-icons">north_east</i></a></i></h4>
-			<h4><i><a href="https://devpost.com/JayAgaskar" class="no-underline" target="_blank">DevPost<i class="material-icons">north_east</i></a></i></h4>
-			<h4><i><a href="https://www.youtube.com/user/JayAgaskar" class="no-underline" target="_blank">YouTube<i class="material-icons">north_east</i></a></i></h4>
-				</div>
-			
-		  </section>
+
+<section id="projects" style="display: flex; color: white;">
+
+	<h1 style="font-family: 'Playfair Display', serif; padding-top: 35px; text-align: center;">projects</h1>
+
+	<div class="slider">
+
+		<a href="#slide-1" style="color: black">1</a>
+		<a href="#slide-2" style="color: black">2</a>
+		<a href="#slide-3" style="color: black">3</a>
+		<a href="#slide-4" style="color: black">4</a>
+		<a href="#slide-5" style="color: black">5</a>
+
+		<div class="slides">
+			<div id="slide-1" style="color: black">
+				1
+			</div>
+			<div id="slide-2" style="color: black">
+				2
+			</div>
+			<div id="slide-3" style="color: black">
+				3
+			</div>
+			<div id="slide-4" style="color: black">
+				4
+			</div>
+			<div id="slide-5" style="color: black">
+				5
+			</div>
 		</div>
+	</div>
+	<!-- At my co-op I performed a supervised machine learning model on cancellation comments to understand sentiments wihtout having to go over every single comment. I used a Random Forest model that had a 80% training set accuracy and a 70% testing set accuracy. <b>Technology/Tools used: Pyhton, Jupyter Notebook, MSSQL, Excel-->
 
-		<!-- Smoothscroll script -->
-		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+</section>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
-		
-	</body>
+
+
+<section id="contact" style="display: flex;">
+	<p></p>
+	<h2 style="color: white; font-size: 2.5rem; text-align: left; padding-left: 30px; padding-top: 100px; font-family: 'Fjalla One', sans-serif;">Let's get in touch!</h2>
+	<h2 style="font-size: 4.5rem; padding-left: 30px; font-family: 'Fjalla One', sans-serif;"><a href="mailto:agaskar.j@northeastern.edu" style="color:white">agaskar.j@northeastern.edu<i class="material-icons">mail_outline</i></a></h2>
+	<hr class="rounded">
+	
+	<div style="font-family: 'Fjalla One', sans-serif;">
+		<img src="images/IMG-6827.PNG" style="float:right; width: 412px; height: 421px; padding-right: 10px; padding-bottom:10px;"/>
+		<h4><i><a href="https://www.linkedin.com/in/jayagaskar/" class="no-underline" target="_blank">LinkedIn<i class="material-icons">north_east</i></a></i></h4>
+		<h4><i><a href="https://github.com/AGASKARJ" class="no-underline" target="_blank">Github<i class="material-icons">north_east</i></a></i></h4>
+		<h4><i><a href="https://devpost.com/JayAgaskar" class="no-underline" target="_blank">DevPost<i class="material-icons">north_east</i></a></i></h4>
+		<h4><i><a href="https://www.youtube.com/user/JayAgaskar" class="no-underline" target="_blank">YouTube<i class="material-icons">north_east</i></a></i></h4>
+		<div class="footer">
+		<h5 style="color:white;">Coded with <i class="material-icons heart">favorite_border</i> using CSS, JS, HTML. 2020</h5>
+	</div>
+	
+	</div>
+
+
+           <!-- <h5 style="">Coded with <i class="material-icons heart">favorite_border</i> using CSS, JS, HTML. 2020</h5> -->
+       
+
+</section>
+</div> 
+
+<!-- Smoothscroll script -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+<!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+
+</body>
 </html>
