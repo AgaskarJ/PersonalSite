@@ -12,6 +12,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
@@ -20,15 +21,27 @@
 	<link rel="stylesheet" href="assets/css/style.scss" />
 	<link rel="stylesheet" href="assets/css/carouselstyle.css" />
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="assets/css/interactivetextstyle.css">
+
 	<script src="assets/js/script.js"></script>
 
 	<meta charset="UTF-8">
 
-	<!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 	<script>
 
@@ -67,26 +80,19 @@ function showSlides(n) {
 
 	<body>
 
-		<!--JavaScript at end of body for optimized loading-->
-		<script type="text/javascript" src="assets/js/materialize.min.js"></script>
-
-		<script src="/assets/js/main.js"></script>
-
-		
-
 		<div class="containerthingy"> 
 
 			<section id="home" style="display: flex; align-items: center; ">
 
 				<section id="banner">
-						<ul>
-							<li><a href="#home">Home</a></li>
-							<li style="float:right"><a href="#contact">Contact</a></li>
-							<li style="float:right"><a href="#projects">Projects</a></li>
-							<li style="float:right"><a href="#experience">Experience</a></li>
-							<li style="float:right"><a href="#about">About</a></li>
-						</ul>
-	
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li style="float:right"><a href="#contact">Contact</a></li>
+						<li style="float:right"><a href="#projects">Projects</a></li>
+						<li style="float:right"><a href="#experience">Experience</a></li>
+						<li style="float:right"><a href="#about">About</a></li>
+					</ul>
+
 					<div class="index-text text-animate">
 						<h6 style="text-align:left; padding-left: 35px; padding-top: 80px;">Jay Agaskar,</h6>
 						<h6 style="text-align:right; padding-right: 35px; padding-top: 20px;">Student at Northeastern<br />Uninversity, 2021</h6>
@@ -125,10 +131,118 @@ function showSlides(n) {
 
 
 				<section id="experience" style="display: flex; color: white;">
-					<h1 style="padding-top: 35px; text-align: center; font-family: 'Playfair Display', serif;">experience</h1>
+					<div class="container">
+						<h2 style="text-align: center;">Business Intelligence, Data Analyst, Business Analyst, Web Developer, International Marketing</h2>
+
+						<h1 style="text-align: center; font-family: 'Playfair Display', serif; font-size:5rem"><u>experience</u></h1>
+						<p style="text-align: center">(Please read full details of my responsibilites on my <a href="#contact">LinkedIn</a>)</p>
+						<p style="text-align: center; padding-bottom:15px">Hover over the text!</p>
+					</div>
+					<section class="containerinteractivetext">
+						<h1 class="titleinteractive">Berkshire Hathaway | Dell EMC | Nemera Consulting | Santora Nakama | CP ALL | GoPomelo </h1>
+					</section>
 
 
-				</section>
+
+<!--
+				<div class="row">
+					<div class="col s4">
+      <div class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
+      <p style="color:black;"><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
+      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>	
+ </div>
+ 			<div class="col s4">
+      <div class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
+      <p style="color:black;"><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
+      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>	
+ </div>
+ 		<div class="col s4">
+      <div class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
+      <p style="color:black;"><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
+      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>	
+ </div>
+  </div>
+
+				<div class="row">
+					<div class="col s4">
+      <div class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
+      <p style="color:black;"><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
+      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>	
+ </div>
+ 			<div class="col s4">
+      <div class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
+      <p style="color:black;"><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
+      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>	
+ </div>
+ 		<div class="col s4">
+      <div class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
+      <p style="color:black;"><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
+      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>	
+ </div>
+  </div>
+
+-->
+</section>
 
 
   <!--
@@ -229,14 +343,14 @@ function showSlides(n) {
 		<h4><i><a href="https://devpost.com/JayAgaskar" class="no-underline" target="_blank">DevPost<i class="material-icons">north_east</i></a></i></h4>
 		<h4><i><a href="https://www.youtube.com/user/JayAgaskar" class="no-underline" target="_blank">YouTube<i class="material-icons">north_east</i></a></i></h4>
 		<div class="footer">
-		<h5 style="color:white;">Coded with <i class="material-icons heart">favorite_border</i> using CSS, JS, HTML. 2020</h5>
-	</div>
-	
+			<h5 style="color:white;">Coded with <i class="material-icons heart">favorite_border</i> using CSS, JS, HTML. 2020</h5>
+		</div>
+
 	</div>
 
 
-           <!-- <h5 style="">Coded with <i class="material-icons heart">favorite_border</i> using CSS, JS, HTML. 2020</h5> -->
-       
+	<!-- <h5 style="">Coded with <i class="material-icons heart">favorite_border</i> using CSS, JS, HTML. 2020</h5> -->
+
 
 </section>
 </div> 
@@ -247,7 +361,13 @@ function showSlides(n) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
 
 <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<!-- Interactive text-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js'></script><script src="assets/js/interactivetextscript.js"></script>
 
 </body>
 </html>

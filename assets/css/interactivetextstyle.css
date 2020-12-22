@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+.containerinteractivetext {
+  overflow: hidden;
+  background: #FFF;
+  cursor: ew-resize;
+  white-space: nowrap;
+  padding: 5vh 0;
+  height: 250px;
+}
+
+.titleinteractive {
+  font: bold normal 12vw/1 "Montserrat", sans-serif;
+  position: relative;
+  color: #000;
+  display: inline-block;
+  margin: 0;
+  padding: 0 15%;
+  will-change: transform;
+}
