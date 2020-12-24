@@ -28,6 +28,10 @@
 
 	<meta charset="UTF-8">
 
+
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -75,174 +79,79 @@ function showSlides(n) {
 		}
 		
 		</script>
-	</head>
 
 
-	<body>
+		<script>
 
-		<div class="containerthingy"> 
+		document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.collapsible');
+			var instances = M.Collapsible.init(elems, options);
+		});
 
-			<section id="home" style="display: flex; align-items: center; ">
+  // Or with jQuery
 
-				<section id="banner">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li style="float:right"><a href="#contact">Contact</a></li>
-						<li style="float:right"><a href="#projects">Projects</a></li>
-						<li style="float:right"><a href="#experience">Experience</a></li>
-						<li style="float:right"><a href="#about">About</a></li>
-					</ul>
+  $(document).ready(function(){
+  	$('.collapsible').collapsible();
+  });
 
-					<div class="index-text text-animate">
-						<h6 style="text-align:left; padding-left: 35px; padding-top: 80px;">Jay Agaskar,</h6>
-						<h6 style="text-align:right; padding-right: 35px; padding-top: 20px;">Student at Northeastern<br />Uninversity, 2021</h6>
-						<h6 style="text-align:left; padding-left: 35px; padding-top: 20px;">Creative & Diligent<br />Data Scientist</h6>
-						<h6 style="text-align:right; padding-right: 35px; padding-top: 20px;">with a Growth mindset</h6>
-					</div>
+  </script>
 
-				</section>
+</head>
+
+
+<body>
+
+	<div class="containerthingy"> 
+
+		<section id="home" style="display: flex; align-items: center; ">
+
+			<section id="banner">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li style="float:right"><a href="#contact">Contact</a></li>
+					<li style="float:right"><a href="#projects">Projects</a></li>
+					<li style="float:right"><a href="#experience">Experience</a></li>
+					<li style="float:right"><a href="#about">About</a></li>
+				</ul>
+
+				<div class="index-text text-animate">
+					<h6 style="text-align:left; padding-left: 35px; padding-top: 80px;">Jay Agaskar,</h6>
+					<h6 style="text-align:right; padding-right: 35px; padding-top: 20px;">Student at Northeastern<br />Uninversity, 2021</h6>
+					<h6 style="text-align:left; padding-left: 35px; padding-top: 20px;">Creative & Diligent<br />Data Scientist</h6>
+					<h6 style="text-align:right; padding-right: 35px; padding-top: 20px;">with a Growth mindset</h6>
+				</div>
+
+			</section>
+		</section>
+
+		<section id="about" style="display: flex; align-items: center; text-align: center; color: white;">
+			<div class="div-about">
+				<p>&#128075; I'm a curious analyst who can develop reports to drive business decisions. I'm an Econometrics and Finance combined major with a Computer Science Minor at Northeastern University, from Bangkok, Thailand.<br> 
+					I got my interests with technology and coding since early high school. Since then, I've been improving my skills through projects and learning from ... 
+					<br>
+
+					<br>	
+
+					<b>&#128200; My aspirations</b><br>
+					Most recently passionate about data analytics and have taken interests in visualizations working witn BI tools and Python scripting.<br>
+					I enjoy the problem solving aspect and indulge in taking initiatives in businesses. Easy communicator as a team member and experienced in narrating the data journey<br>
+
+					<br>
+
+					&#127891; Until Graduation?<br>
+					I just finished my last final Co-op as a BI Analyst building dashboards and performing analysis through SQL. Over the past few years I've been self-teaching myself R and Swift. I've also attened many hackathons to build friendships and learn new technologies. At Northeastern I'm a huge part of TAMID, a club focused on Israeli start-ups. I have been a Consulting Project Manager and am currently a Tech Consultant learning new technologies and conversing with entrepenurs.<br>
+
+					<br>
+
+					&#127916; &#127948; Outside of work,<br>
+					I enjoy fimmaking and video editing as full-time hobbies. Producing a portfolio of YouTube videos since 2012 consisting of short films, video blogs, and tutorials. <br>
+					I also spend time on the green playing Golf and am certified Grade 3 in Piano. Just getting into cooking over lockdown.</p>
+
+				</div>
 			</section>
 
-			<section id="about" style="display: flex; align-items: center; text-align: center; color: white;">
-				<div class="div-about">
-					<p>&#128075; I'm a curious analyst who can develop reports to drive business decisions. I'm an Econometrics and Finance combined major with a Computer Science Minor at Northeastern University, from Bangkok, Thailand.<br> 
-						I got my interests with technology and coding since early high school. Since then, I've been improving my skills through projects and learning from ... 
-						<br>
-
-						<br>	
-
-						<b>&#128200; My aspirations</b><br>
-						Most recently passionate about data analytics and have taken interests in visualizations working witn BI tools and Python scripting.<br>
-						I enjoy the problem solving aspect and indulge in taking initiatives in businesses. Easy communicator as a team member and experienced in narrating the data journey<br>
-
-						<br>
-
-						&#127891; Until Graduation?<br>
-						I just finished my last final Co-op as a BI Analyst building dashboards and performing analysis through SQL. Over the past few years I've been self-teaching myself R and Swift. I've also attened many hackathons to build friendships and learn new technologies. At Northeastern I'm a huge part of TAMID, a club focused on Israeli start-ups. I have been a Consulting Project Manager and am currently a Tech Consultant learning new technologies and conversing with entrepenurs.<br>
-
-						<br>
-
-						&#127916; &#127948; Outside of work,<br>
-						I enjoy fimmaking and video editing as full-time hobbies. Producing a portfolio of YouTube videos since 2012 consisting of short films, video blogs, and tutorials. <br>
-						I also spend time on the green playing Golf and am certified Grade 3 in Piano. Just getting into cooking over lockdown.</p>
-
-					</div>
-				</section>
 
 
-				<section id="experience" style="display: flex; color: white;">
-					<div class="container">
-						<h2 style="text-align: center;">Business Intelligence, Data Analyst, Business Analyst, Web Developer, International Marketing</h2>
-
-						<h1 style="text-align: center; font-family: 'Playfair Display', serif; font-size:5rem"><u>experience</u></h1>
-						<p style="text-align: center">(Please read full details of my responsibilites on my <a href="#contact">LinkedIn</a>)</p>
-						<p style="text-align: center; padding-bottom:15px">Hover over the text!</p>
-					</div>
-					<section class="containerinteractivetext">
-						<h1 class="titleinteractive">Berkshire Hathaway | Dell EMC | Nemera Consulting | Santora Nakama | CP ALL | GoPomelo </h1>
-					</section>
-
-
-
-<!--
-				<div class="row">
-					<div class="col s4">
-      <div class="card small">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
-      <p style="color:black;"><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
-      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>	
- </div>
- 			<div class="col s4">
-      <div class="card small">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
-      <p style="color:black;"><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
-      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>	
- </div>
- 		<div class="col s4">
-      <div class="card small">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
-      <p style="color:black;"><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
-      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>	
- </div>
-  </div>
-
-				<div class="row">
-					<div class="col s4">
-      <div class="card small">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
-      <p style="color:black;"><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
-      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>	
- </div>
- 			<div class="col s4">
-      <div class="card small">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
-      <p style="color:black;"><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
-      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>	
- </div>
- 		<div class="col s4">
-      <div class="card small">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/BHSI.jpg" style="width:400px;height:100px;">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="color:black">Card Title<i class="material-icons right">more_vert</i></span>
-      <p style="color:black;"><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right" style="color:black">close</i></span>
-      <p style="color:black">Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>	
- </div>
-  </div>
-
--->
-</section>
 
 
   <!--
@@ -296,9 +205,84 @@ function showSlides(n) {
 
 <section id="projects" style="display: flex; color: white;">
 
-	<h1 style="font-family: 'Playfair Display', serif; padding-top: 35px; text-align: center;">projects</h1>
+	<h1 style="font-family: 'Playfair Display', serif; padding-top: 35px; text-align: center;"><u>projects</u></h1>
 
-	<div class="slider">
+	<div class="container">
+
+		<div class="row">
+    <div class="col s12 m12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+        	<img src="images/BHSI.jpg" style="width:400px;height:120px;"/>
+          <h2>Cancellation Comments Categorization</h2>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <p>Stack: Python, Scikit-learn <a href="#" style="float:right">Medium Article</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m12 offset-s12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <h2>Disaster Communications Assistant, HackMIT 2019</h2>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <p>Stack: IBM Cloud, Node-RED <a href="#" style="float:right">DEvpost</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m12 offset-s12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <h2>Bee Colony and CCD</h2>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <p>Stack: Python</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m12 offset-s12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <h2>OKR and KPI Dashboards</h2>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <p>Stack: PowerBI</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+		<!--<img src="images/BHSI.jpg" align="left" style="width:400px;height:120px;"/>
+		Text Goes here
+		<br></br>
+		<img src="images/dell.png" align="left" style="width:390px;height:72px;"/>
+		Text Goes here2
+		-->
+
+	</div>
+
+	<!-- <div class="slider">
 
 		<a href="#slide-1" style="color: black">1</a>
 		<a href="#slide-2" style="color: black">2</a>
@@ -324,8 +308,22 @@ function showSlides(n) {
 			</div>
 		</div>
 	</div>
-	<!-- At my co-op I performed a supervised machine learning model on cancellation comments to understand sentiments wihtout having to go over every single comment. I used a Random Forest model that had a 80% training set accuracy and a 70% testing set accuracy. <b>Technology/Tools used: Pyhton, Jupyter Notebook, MSSQL, Excel-->
+	At my co-op I performed a supervised machine learning model on cancellation comments to understand sentiments wihtout having to go over every single comment. I used a Random Forest model that had a 80% training set accuracy and a 70% testing set accuracy. <b>Technology/Tools used: Pyhton, Jupyter Notebook, MSSQL, Excel-->
 
+</section>
+
+
+<section id="experience" style="display: flex; color: white;">
+	<div class="container">
+		<h2 style="text-align: center;">Business Intelligence, Data Analyst, Business Analyst, Web Developer, International Marketing</h2>
+
+		<h1 style="text-align: center; font-family: 'Playfair Display', serif; font-size:5rem"><u>experience</u></h1>
+		<p style="text-align: center">(Please read full details of my responsibilites on my <a href="#contact">LinkedIn</a>)</p>
+		<p style="text-align: center; padding-bottom:15px">Hover over the text!</p>
+	</div>
+	<section class="containerinteractivetext">
+		<h1 class="titleinteractive">Berkshire Hathaway | Dell EMC | Nemera Consulting | Santora Nakama | CP ALL | GoPomelo </h1>
+	</section>
 </section>
 
 
@@ -358,11 +356,15 @@ function showSlides(n) {
 <!-- Smoothscroll script -->
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="assets/js/materialize.js"></script>
+<script src="assets/js/init.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
 
 <!--JavaScript at end of body for optimized loading-->
 <script type="text/javascript" src="assets/js/materialize.min.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
 <!-- Interactive text-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>

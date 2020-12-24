@@ -34,6 +34,7 @@ section#experience {
 section#projects {
 	background: linear-gradient(270deg, #c76d19, #9c0f45, #f1ff00);
 	background-size: 800% 800%;
+  height: 250vh;
 
 	-webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -175,12 +176,26 @@ p a:hover {
 	scroll-snap-type: y mandatory; 
 }
 
+.containerthingynormal {
+  width: 100%;
+  height: 100%;
+
+}
+
 section {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
 	scroll-snap-align: center;
+}
+
+section.projects {          /*Edit*/
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 200vh;
+  scroll-snap-align: center;
 }
 
 div-about {
